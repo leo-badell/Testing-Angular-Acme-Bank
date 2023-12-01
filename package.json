@@ -1,0 +1,11 @@
+{
+  "name": "Testing",
+  "version": "1.0.0",
+  "description": "This is an automation practice",
+  "main": "index.js",
+  "author": "Leonardo Badell",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^13.6.0"
+  }
+}
