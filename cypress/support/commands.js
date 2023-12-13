@@ -1,6 +1,7 @@
+import "cypress-real-events";
 
 Cypress.Commands.add('loginToAcmeBank', () => {
-    cy.visit('https://usdemo.vee24.com/#/')
+    cy.visit(Cypress.env('useBaseUrl')),
 
     cy.get('.mat-form-field-infix')
     .children('[placeholder="Email"]')

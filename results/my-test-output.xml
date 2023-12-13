@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="20.742" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-12-13T01:46:12" tests="0" file="cypress\e2e\testingTransferAndPortfolio.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Testing transfer and portfolio" timestamp="2023-12-13T01:46:12" tests="2" time="20.731" failures="0">
+    <testcase name="Testing transfer and portfolio Make a transfer" time="6.666" classname="Make a transfer">
+    </testcase>
+    <testcase name="Testing transfer and portfolio Portfolio" time="11.358" classname="Portfolio">
+    </testcase>
+  </testsuite>
+</testsuites>

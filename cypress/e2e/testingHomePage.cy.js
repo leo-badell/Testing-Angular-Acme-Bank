@@ -1,66 +1,65 @@
+
 describe('Testing Angular Acme Bank', () => {
 
   beforeEach(() => {
+    
     cy.loginToAcmeBank();
+    cy.wait(1000); 
+
   });
 
-  it('Should make log in in the application', () => {
+  //This code is for testing the home page and its elements.
+  it('Should test the first page of Acme Bank', () => {
+    cy.get('.mat-toolbar').invoke('text').then(text => {
+      cy.wrap(text)
+        .should('contain', 'Acme Bank')
+        .and('contain', 'Home')
+        .and('contain', 'Transfer')
+        .and('contain', 'Portfolio')
+        .and('contain', 'Loans')
+        .and('contain', 'LogOut');
 
-    //It validates the home of Acme Bank
-
-    it('Should test the first page of Acme Bank', () => {
-      cy.get('.mat-toolbar').invoke('text').then(text => {
-        cy.wrap(text)
-          .should('contain', 'Acme Bank')
-          .and('contain', 'Home')
-          .and('contain', 'Transfer')
-          .and('contain', 'Portfolio')
-          .and('contain', 'Loans')
-          .and('contain', 'LogOut');
-  
-        cy.getByClass('card.mat-card')
-          .find('ul')
-          .then(cardLocator => {
-            cy.wrap(cardLocator)
-              .find('li')
-              .eq(0)
-              .should('contain', 'No Application');
-            cy.wrap(cardLocator)
-              .find('li')
-              .eq(1)
-              .should('contain', 'No Credit Check');
-            cy.wrap(cardLocator)
-              .find('li')
-              .eq(2)
-              .should('contain', 'No Origination Fee');
-          });
-      });
-  
-      cy.getByClass('mat-card-title')
-        .children('h3')
-        .should('contain', 'Recent Transactions');
-  
-      cy.get('tbody')
-        .find('tr')
-        .each($row => {
-          cy.wrap($row)
-            .find('td')
-            .each($cell => {
-              cy.wrap($cell).invoke('text').then(text => {
-                if (text.length <= 60) {
-                  cy.log('It passes');
-                } else {
-                  cy.log('Too many elements');
-                }
-              });
-            });
+      cy.getByClass('card.mat-card')
+        .find('ul')
+        .then(cardLocator => {
+          cy.wrap(cardLocator)
+            .find('li')
+            .eq(0)
+            .should('contain', 'No Application');
+          cy.wrap(cardLocator)
+            .find('li')
+            .eq(1)
+            .should('contain', 'No Credit Check');
+          cy.wrap(cardLocator)
+            .find('li')
+            .eq(2)
+            .should('contain', 'No Origination Fee');
         });
     });
+
+    cy.getByClass('mat-card-title')
+      .children('h3')
+      .should('contain', 'Recent Transactions');
+
+    cy.get('tbody')
+      .find('tr')
+      .each($row => {
+        cy.wrap($row)
+          .find('td')
+          .each($cell => {
+            cy.wrap($cell).invoke('text').then(text => {
+              if (text.length <= 60) {
+                cy.log('It passes');
+              } else {
+                cy.log('Too many elements');
+              }
+            });
+          });
+      });
   });
 
+  //This code validates a loan application in Angular Acme Bank.
   it('Should submit a Loan in Acme Bank', () => {
-    
-    // It validates a loan petition in Angular Acme Bank
     
   cy.contains('button', 'Click here to learn more!').click();
 
@@ -130,5 +129,11 @@ describe('Testing Angular Acme Bank', () => {
         });
     });
 });
-  });
 });
+})
+
+
+
+
+  
+  
