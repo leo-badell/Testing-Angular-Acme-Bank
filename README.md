@@ -6,7 +6,8 @@ Welcome to the Acme Bank Automation Test Suite! This repository contains end-to-
 
 This Cypress test suite ensures the robustness of Acme Bank's transfer and portfolio features (you'll find the website in the following link => https://usdemo.vee24.com/). The tests are designed to validate the seamless functionality of these key components in the banking application.
 
-![Angular Acme Bank - Portfolio](https://github.com/leo-badell/Testing-Angular-Acme-Bank/assets/91019951/cdefa031-1c85-41f9-b80c-fc1c0dfad7aa)
+
+![Captura de tela 2023-12-26 224434](https://github.com/leo-badell/Testing-Angular-Acme-Bank/assets/91019951/ba0507c6-2384-457e-a9a8-aa27cf1ed86b)
 
 
 ## Test Scenarios
