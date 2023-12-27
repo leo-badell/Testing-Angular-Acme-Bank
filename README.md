@@ -6,8 +6,7 @@ Welcome to the Acme Bank Automation Test Suite! This repository contains end-to-
 
 This Cypress test suite ensures the robustness of Acme Bank's transfer and portfolio features (you'll find the website in the following link => https://usdemo.vee24.com/). The tests are designed to validate the seamless functionality of these key components in the banking application.
 
-
-![Captura de tela 2023-12-26 224434](https://github.com/leo-badell/Testing-Angular-Acme-Bank/assets/91019951/ba0507c6-2384-457e-a9a8-aa27cf1ed86b)
+![Angular Acme Bank  - Portfolio](https://github.com/leo-badell/Testing-Angular-Acme-Bank/assets/91019951/ff77bc2f-4cd7-46da-a204-ec4eebb913a8)
 
 
 ## Test Scenarios
@@ -30,14 +29,6 @@ The `portfolio.spec.js` file focuses on the portfolio management functionality. 
 - Verifying investment information
 - Interacting with a pie chart
 
-## Getting Started
 
-To run the tests locally, follow these steps:
-
-1. Clone this repository to your local machine.
-2. Install Cypress by running `npm install`.
-3. Run the Cypress tests using the command `npm run cypress:open`.
-
-Ensure that your application is running and accessible before executing the tests. The Cypress Test Runner provides an interactive environment to view and debug test results.
 
 
