@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
 
-  "video": true,
+  // "video": true,
   e2e: {
     env: {
       useBaseUrl: 'https://usdemo.vee24.com/#/'

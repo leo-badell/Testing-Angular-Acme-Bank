@@ -1,5 +1,5 @@
 {
-  "name": "Testing",
+  "name": "Testing-Acme-Bank",
   "version": "1.0.0",
   "description": "This is an automation practice",
   "main": "index.js",
@@ -8,11 +8,14 @@
   "scripts": {
     "start": "http-server",
     "test": "cypress run",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "ci": "npm install",
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "cypress": "^13.6.0",
-    "cypress-real-events": "^1.11.0"
+    "cypress-real-events": "^1.11.0",
+    "webpack": "^5.0.0"
   },
   "devDependencies": {
     "@applitools/eyes-cypress": "^3.40.4"
